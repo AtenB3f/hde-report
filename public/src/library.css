@@ -1,0 +1,169 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+header, footer, nav, aside, section, article {
+    display:block; 
+}
+    
+
+/* font */
+.notosanskr * { 
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* colors */
+:root {
+    --brand_main_001 : #059E4D;
+    --brand_sub_002: #053874;
+    --brand_third_003: #FCB12A;
+
+    --text_color_001 : #000000;
+    --textfiled_011: #545862;
+
+    --border_012: #888C96;
+
+    --lightmode_surface_020: #F7F7F7;
+    --lightmode_border_012: #25282D;
+    --lightmode_low_emphasis_003 : #858E95;
+    --lightmode_medium_emphasis_002 : #42454C;
+    --lightmode_high_emphasis_001 : #131416;
+
+    --darkmode_surface_dark_002 : #25282D;
+
+    --background_light: #EDEDED;
+
+    --base_laygout : #D9D9D9;
+    --base_medium_layout: #D9D9D9;
+}
+
+.topMenu {
+    width: 240px;
+    height: 54px;
+    background-color: var(--lightmode_low_emphasis_003);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font : "Noto Sans"
+}
+
+.hyundaeButton {
+    height: 42px;
+    background-color: var(--brand_main_001);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.listButton {
+    width: 240px;
+    height: 54px;
+    background-color: var(--lightmode_surface_020);
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 24px;
+    padding-right: 24px;
+    font: 'Noto Sans KR';
+    font-size: 14pt;
+    margin: 0;
+    list-style: none;
+    outline-style: none;
+    outline-width: 0px;
+    box-shadow: none;
+}
+
+button {
+    border: none;
+    outline: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+nav {
+    width: 240px;
+    background-color: var(--lightmode_medium_emphasis_002);
+    margin: 0px
+}
+
+ul {
+    list-style: none;
+    width: 240px;
+    background-color: var(--lightmode_surface_020);
+    color: var(textfiled_011);
+    text-align: left;
+    vertical-align: middle;
+    font: 'Noto Sans KR';
+    font-size: 14pt;
+    margin: 0;
+}
+
+li {
+    width: 240px;
+    height: 54px;
+    background-color: var(--lightmode_surface_020);
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 24px;
+    font: 'Noto Sans KR';
+    font-size: 15pt;
+    margin: 0;
+}
+
+#hyundaeHeader {
+    height: 56px;
+    background-color: var(--darkmode_surface_dark_002);
+    text-align: left;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+aside {
+    width: 240px;
+    height: 100%;
+    float:left;
+    margin: 0;
+
+    background-color: var(--lightmode_medium_emphasis_002)
+}
+
+article {
+    background-color: var(--background_light);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    background-color: var(--background_light);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+title {
+    background-color: var(--lightmode_surface_020);
+    color : black;
+    margin: 0;
+}
+
+
+h3 {
+    font: 'Noto Sans KR';
+    font-size: 24pt;
+    margin: 0;
+}
+
+h4 {
+    font: 'Noto Sans KR';
+    font-size: 17pt;
+    font-weight: bold;
+    margin: 0;
+}
+
+
