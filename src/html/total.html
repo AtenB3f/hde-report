@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta property="og:title" content="현대엔지니어링 업무보고" />
+    <link rel="stylesheet" type="text/css" href="../css/library.css" />
+    <link rel="stylesheet" type="text/css" href="../css/class.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <!-- <script src="../js/calendar.js"></script>
+    <script src="../js/main.js"></script> -->
+    <!-- <script async src="../js/calendar.js"></script>
+    <script async src="../js/main.js"></script> -->
+    <title>현대 엔지니어링 업무보고</title>
+  </head>
+
+  <body>
+    <header class="hyundaeHeader">
+      <img class="hyundaeLogo" src="../images/HEC_logo.svg" />
+    </header>
+    <div class="hyundaeLayout">
+      <aside class="hyundaeAside">
+        <button
+          type="button"
+          class="listButton"
+          onclick="location.href='index.html'"
+        >
+          업무 보고 관리
+        </button>
+
+        <button
+          type="button"
+          class="listButton"
+          onclick="location.href='report.html'"
+        >
+          업무 보고 작성
+        </button>
+        <button
+          type="button"
+          class="listButton"
+          onClick="location.href='total.html'"
+        >
+          업무 보고 총괄
+        </button>
+      </aside>
+
+      <article class="articleContents">
+        <div id="total" class="titleHeader">
+          <p>업무 보고 총괄</p>
+        </div>
+
+        <div class="content">
+          <form action="">
+            <input type="date" id="date" />
+          </form>
+
+          <table>
+            <colgroup>
+              <col class="smallButtonCol" />
+              <col class="smallTextCol" />
+              <col class="largeCol" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th></th>
+                <th>번호</th>
+                <th>업체명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><input type="checkbox" /></td>
+                <td><input type="checkbox" /></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <script src="../js/loadHTML.js"></script>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>

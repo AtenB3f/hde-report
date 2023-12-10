@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta property="og:title" content="현대엔지니어링 업무보고" />
+    <link rel="stylesheet" type="text/css" href="../css/library.css" />
+    <link rel="stylesheet" type="text/css" href="../css/class.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <!-- <script src="../js/calendar.js"></script>
+    <script src="../js/main.js"></script> -->
+    <!-- <script async src="../js/calendar.js"></script>
+    <script async src="../js/main.js"></script> -->
+    <title>현대 엔지니어링 업무보고</title>
+  </head>
+
+  <body>
+    <script src="../js/main.js" type="module"></script>
+    <header class="hyundaeHeader">
+      <img class="hyundaeLogo" src="../images/HEC_logo.svg" />
+    </header>
+    <div class="hyundaeLayout">
+      <aside class="hyundaeAside">
+        <button
+          type="button"
+          class="listButton"
+          onclick="location.href='index.html'"
+        >
+          업무 보고 관리
+        </button>
+
+        <button
+          type="button"
+          class="listButton"
+          onclick="location.href='report.html'"
+        >
+          업무 보고 작성
+        </button>
+        <button
+          type="button"
+          class="listButton"
+          onClick="location.href='total.html'"
+        >
+          업무 보고 총괄
+        </button>
+      </aside>
+
+      <article class="articleContents">
+        <!-- <div class="titleHeader">
+          <p>업무 보고 관리</p>
+        </div>
+        <div class="content">
+          <h4>2023년 11월 4일 토요일</h4>
+          <form action="/report" method="post">
+            <div>
+              <input type="text" id="report" placeholder="텍스트" />
+            </div>
+
+            <div>
+              <input type="submit" value="삭제" />
+            </div>
+            <div>
+              <input type="submit" value="수정" />
+            </div>
+          </form>
+
+          <script src="../js/loadHTML.js"></script>
+        </div> -->
+        <div id="contents"></div>
+
+        <script>
+          async function fetchHtmlAsText(url) {
+            return await (await fetch(url)).text();
+          }
+
+          async function importPage(target) {
+            console(target);
+            document.querySelector('#' + target).innerHTML =
+              await fetchHtmlAsText(target + '.html');
+          }
+        </script>
+      </article>
+    </div>
+  </body>
+</html>

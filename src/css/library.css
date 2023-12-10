@@ -1,0 +1,136 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* font */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* colors */
+:root {
+  --brand_main_001: #059e4d;
+  --brand_sub_002: #053874;
+  --brand_third_003: #fcb12a;
+
+  --text_color_001: #000000;
+  --textfiled_011: #545862;
+
+  --border_012: #888c96;
+
+  --lightmode_surface_020: #f7f7f7;
+  --lightmode_border_012: #25282d;
+  --lightmode_low_emphasis_003: #858e95;
+  --lightmode_medium_emphasis_002: #42454c;
+  --lightmode_high_emphasis_001: #131416;
+
+  --darkmode_surface_dark_002: #25282d;
+
+  --background_light: #ededed;
+
+  --base_laygout: #d9d9d9;
+  --base_medium_layout: #d9d9d9;
+}
+
+element {
+  border: var(--border_012);
+}
+
+h3 {
+  font: 'Noto Sans KR';
+  font-size: 20pt;
+  margin: 0;
+}
+
+h4 {
+  font: 'Noto Sans KR';
+  font-size: 17pt;
+  font-weight: bold;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: var(--base_laygout);
+  height: 100%;
+}
+
+button {
+  border: none;
+  outline: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+header {
+  width: 100%;
+  height: 56px;
+  margin: 0;
+  padding-left: 20px;
+  align-items: center;
+  background-color: white;
+  display: flex;
+}
+
+aside {
+  width: 240px;
+  height: 100%;
+  margin: 0;
+  background-color: var(--lightmode_medium_emphasis_002);
+}
+
+article {
+  background-color: var(--background_light);
+}
+
+section {
+  background-color: var(--background_light);
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+title {
+  background-color: var(--lightmode_surface_020);
+  color: black;
+  margin: 0;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+th {
+  border-collapse: collapse;
+}
+
+td {
+  border-collapse: collapse;
+}
+
+body {
+  background: navy;
+  line-height: 1.6;
+}
+
+main {
+  display: flex;
+  align-items: baseline;
+  gap: 32px;
+  padding: 48px 0;
+}
